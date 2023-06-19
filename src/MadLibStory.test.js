@@ -1,12 +1,12 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import MadLib from "./MadLib";
+import MadLibStory from "./MadLibStory";
 
 it("will render without crashing", () => {
-  render(<MadLib />);
+  render(<MadLibStory />);
 });
 
 it("matches snapshot", () => {
-  const { asFragment } = render(<MadLib />);
+  const { asFragment } = render(<MadLibStory />);
   expect(asFragment()).toMatchSnapshot();
 });
